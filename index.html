@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Social Media Framework</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Social Media Framework</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Messages</a></li>
+        <li><a href="#">Tasks</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="task-section">
+    <h2>Assign a Task</h2>
+    <form id="task-form">
+      <label for="task-name">Task Name:</label>
+      <input type="text" id="task-name" required>
+
+      <label for="task-assignee">Assignee:</label>
+      <select id="task-assignee" required>
+        <option value="">Select Assignee</option>
+        <option value="user1">User 1</option>
+        <option value="user2">User 2</option>
+        
+      </select>
+
+      <label for="task-deadline">Deadline:</label>
+      <input type="date" id="task-deadline" required>
+
+      <input type="submit" value="Assign Task">
+    </form>
+  </section>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
